@@ -75,3 +75,57 @@ body {
     background: #ff8a80;
     transform: scale(1.1);
   }
+  @media (max-width: 600px) {
+    body {
+      padding: 20px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    img {
+      width: 250px; /* تصغير الصورة */
+    }
+
+    p {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+
+    .play-button {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  }
+
+  /* 🔻 التابلت (من 600px إلى 900px) */
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    img {
+      width: 280px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  /* 🔻 الشاشات الكبيرة (أكثر من 1200px) */
+  @media (min-width: 1200px) {
+    img {
+      width: 350px;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
