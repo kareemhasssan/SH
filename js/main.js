@@ -12,3 +12,17 @@ image.addEventListener("mouseout", function () {
   music.pause();
   music.currentTime = 0; // إعادة الصوت للبداية
 });
+image.addEventListener("touchstart", function () {
+    music.play();
+  });
+
+  // إيقاف الموسيقى عند إزالة الإصبع
+  image.addEventListener("touchend", function () {
+    music.pause();
+    music.currentTime = 0; // إعادة الصوت للبداية
+  });
+
+  // منع سحب الصورة عند لمسها على الهاتف
+  image.addEventListener("touchmove", function (event) {
+    event.preventDefault();
+  });
